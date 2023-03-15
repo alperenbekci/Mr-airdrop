@@ -40,7 +40,7 @@ const Airdrop = () => {
       toast({
         position: "top",
         title: "Airdrop succesful",
-        description: `Txn Hash ${confirmation}. Please check your wallet and SolScan`,
+        description: `Txn Hash ${confirmation}. Please check your wallet`,
         status: "success",
         duration: 5000,
         isClosable: true,
@@ -69,9 +69,7 @@ const Airdrop = () => {
         width={"lg"}
         textAlign="center"
         onChange={(e: any) => setAddress(e.target.value)}
-        color={"blackAlpha.900"}
         backgroundColor="greenyellow"
-        _placeholder={{ color: "blackAlpha.700" }}
       />
       <Button
         mt={20}
