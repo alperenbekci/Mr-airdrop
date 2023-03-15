@@ -17,18 +17,25 @@ const Home: NextPage = () => {
             <span className={styles.head}>Mr Airdrop</span>
           </Heading>
           <Text color={"white"} fontSize="2xl">
-            Beginner Friendly
+            Beginner Friendly Faucet
           </Text>
           <Text color={"white"} fontSize="xl">
             Use faucet for airdrop
           </Text>
-          <Text color={"greenyellow"} className={styles.a}>
+          <Text color={"greenyellow"} className={styles.a} fontSize="x1">
             <a href="https://explorer.solana.com/">
-              See the transaction in solana explorer
+              View the transaction on solana explorer
             </a>
           </Text>
         </VStack>
         <Airdrop />
+        <footer>
+          <Text className={styles.a} color={"greenyellow"} fontSize="xl">
+            <a href="https://github.com/alperenbekci/mr-airdrop">
+              🦑see on github
+            </a>
+          </Text>
+        </footer>
       </main>
     </div>
   );
